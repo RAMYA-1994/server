@@ -1,5 +1,4 @@
 const express = require("express");
-const nodemailer = require("nodemailer");
 const cors = require("cors");
 const app = express();
 const port = 5000;
@@ -70,7 +69,7 @@ function sendEmail({ recipient_email, OTP }) {
 }
 
 app.get("/", (req, res) => {
-  console.log(process.env.MY_EMAIL);
+  console.log(process.env. MyemailL);
 });
 
 app.post("/send_recovery_email", (req, res) => {
