@@ -69,7 +69,7 @@ function sendEmail({ recipient_email, OTP }) {
 }
 
 app.get("/", (req, res) => {
-  console.log(process.env. MyemailL);
+  console.log(process.env. Myemail);
 });
 
 app.post("/send_recovery_email", (req, res) => {
